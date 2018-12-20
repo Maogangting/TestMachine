@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MenuTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD910.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MenuTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MenuTest\Tab2.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD910.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD911.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MenuTest.pdb" /debug /machine:I386 /out:"Debug/MenuTest.exe" /pdbtype:sept 
+".\Debug\_dlgNew.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MenuTest.obj"
+".\Debug\MenuTestDoc.obj"
+".\Debug\MenuTestView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Tab1.obj"
+".\Debug\Tab2.obj"
+".\Debug\MenuTest.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD911.tmp"
+<h3>Output Window</h3>
+Compiling...
+Tab2.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MenuTest.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\_dlgNew.sbr" ".\Debug\MainFrm.sbr" ".\Debug\MenuTest.sbr" ".\Debug\MenuTestDoc.sbr" ".\Debug\MenuTestView.sbr" ".\Debug\Tab1.sbr" ".\Debug\Tab2.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MenuTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

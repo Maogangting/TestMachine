@@ -1,0 +1,912 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MenuTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MenuTest2.ico"
+IDR_MENUTETYPE          ICON                    "res\\MenuTestDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "项目"
+    BEGIN
+        MENUITEM "新建项目",                        ID_NEW_PROJ
+    END
+    POPUP "配置"
+    BEGIN
+        MENUITEM "IP  端口 设置",                   ID_32781
+        MENUITEM "通过网络配置",                      ID_NEWMENU
+        POPUP "串口配置"
+        BEGIN
+            MENUITEM "COM1",                        ID_32785
+            MENUITEM "COM2",                        ID_32786
+            MENUITEM "COM3",                        ID_32787
+            MENUITEM "COM4",                        ID_32788, CHECKED
+            MENUITEM "COM5",                        ID_32789
+            MENUITEM "COM6",                        ID_32790
+            MENUITEM "COM7",                        ID_32791
+            MENUITEM "COM8",                        ID_32792
+            MENUITEM "COM9",                        ID_32793
+            MENUITEM "COM10",                       ID_32794
+        END
+        MENUITEM "测到不良项终止",                     ID_32798
+    END
+    POPUP "统计"
+    BEGIN
+        MENUITEM "测试统计",                        ID_START_UP
+        MENUITEM "统计",                          ID_32797
+    END
+    POPUP "用户"
+    BEGIN
+        MENUITEM "备注终端测试机",                     ID_32799
+        MENUITEM "更改密码",                        ID_32780
+        MENUITEM "注销",                          ID_LOG_OUT
+        MENUITEM "关于智能测试软件 v1.0",               ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于智能测试软件 v1.0"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "智能测试软件 v1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MENUTEST_FORM DIALOGEX 0, 0, 1086, 603
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_TYPE,68,33,156,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "测试类：",IDC_STATIC1,14,34,49,15
+    EDITTEXT        IDC_EDIT1,68,57,156,19,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "产品名：",IDC_STATIC2,14,59,49,16
+    PUSHBUTTON      "配置更改",IDC_BUTTON2,68,86,71,18
+    PUSHBUTTON      "启动测试",IDC_BUTTON1,152,85,72,18
+    EDITTEXT        IDC_EDIT3,240,32,55,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "S",IDC_BUTTON3,302,32,13,14
+    EDITTEXT        IDC_EDIT4,240,57,55,19,ES_AUTOHSCROLL
+    PUSHBUTTON      "C",IDC_BUTTON4,302,58,13,14
+    PUSHBUTTON      "TCP/IP connect",IDC_BUTTON5,240,85,76,18
+    GROUPBOX        "故障显示",IDC_STATIC4,7,135,315,461
+    GROUPBOX        "配置",IDC_STATIC3,7,14,315,103
+    EDITTEXT        IDC_DISP,15,159,306,437,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "测试记录",IDC_STATIC_RECORD,334,14,736,582
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,340,39,693,557
+    PUSHBUTTON      "结果显示",IDC_RESULT,265,142,50,14
+    CONTROL         "初测",IDC_RADIO_CHUCE,"Button",BS_AUTORADIOBUTTON,152,122,31,10
+    CONTROL         "成测",IDC_RADIO_CHENGCE,"Button",BS_AUTORADIOBUTTON,193,122,31,10
+END
+
+IDD_DIALOG_NEW DIALOGEX 0, 0, 420, 282
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "项目配置"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存文件",IDOK,176,261,40,14
+    PUSHBUTTON      "完成",IDCANCEL,348,261,50,14
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_FIXEDWIDTH | WS_BORDER,7,7,392,226,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT1,44,260,129,15,ES_AUTOHSCROLL
+    LTEXT           "项目名：",IDC_STATIC,7,262,37,13
+    CONTROL         "导入文件",IDC_MFCBUTTON1,"MfcButton",WS_TABSTOP,7,239,209,14
+END
+
+IDD_TAB1 DIALOGEX 0, 0, 343, 252
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    LTEXT           "限流(A)：",IDC_STATIC,33,30,33,13
+    EDITTEXT        IDC_EDIT1,80,30,36,14,ES_AUTOHSCROLL
+    LTEXT           "转速(rpm)：",IDC_STATIC,33,50,39,12
+    LTEXT           "欠压(V)：",IDC_STATIC,33,71,38,14
+    LTEXT           "转向：",IDC_STATIC,33,115,38,15
+    EDITTEXT        IDC_EDIT2,80,50,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,80,71,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,80,115,36,14,ES_AUTOHSCROLL
+    LTEXT           "软启时间(ms)：",IDC_STATIC,33,137,48,15
+    EDITTEXT        IDC_EDIT5,81,137,36,14,ES_AUTOHSCROLL
+    LTEXT           "欠压恢复(V)：",IDC_STATIC,33,93,52,14
+    EDITTEXT        IDC_EDIT6,80,93,36,14,ES_AUTOHSCROLL
+    GROUPBOX        "基本参数配置",IDC_STATIC,16,13,152,178
+    LTEXT           "刹车(ms)：",IDC_STATIC,33,157,39,15
+    EDITTEXT        IDC_EDIT7,81,157,36,14,ES_AUTOHSCROLL
+    GROUPBOX        "电池NTC",IDC_STATIC1,175,13,153,117
+    LTEXT           "高温截止(mV)：",IDC_STATIC,193,30,50,13
+    EDITTEXT        IDC_EDIT8,247,30,36,14,ES_AUTOHSCROLL
+    LTEXT           "高温恢复(mV)：",IDC_STATIC,193,50,51,12
+    LTEXT           "低温截止(mV)：",IDC_STATIC,193,71,48,14
+    EDITTEXT        IDC_EDIT9,247,50,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,247,71,36,14,ES_AUTOHSCROLL
+    LTEXT           "低温恢复(mV)：",IDC_STATIC,193,93,53,14
+    EDITTEXT        IDC_EDIT11,247,93,36,14,ES_AUTOHSCROLL
+    CONTROL         "NTC配置",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,193,115,46,10
+    LTEXT           "* 注： 转向  1：轴向逆时针；0：顺时针 ",IDC_STATIC,17,232,279,13
+    EDITTEXT        IDC_EDIT12,133,30,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,133,51,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,133,72,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,134,94,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,132,138,29,14,ES_AUTOHSCROLL
+    LTEXT           "+-",IDC_STATIC,119,31,11,15
+    LTEXT           "+-",IDC_STATIC,119,49,11,15
+    LTEXT           "+-",IDC_STATIC,119,70,11,15
+    LTEXT           "+-",IDC_STATIC,119,93,11,15
+    LTEXT           "+-",IDC_STATIC,118,138,11,15
+    EDITTEXT        IDC_EDIT17,296,59,29,14,ES_AUTOHSCROLL
+    LTEXT           "+-",IDC_STATIC,285,62,11,15
+    GROUPBOX        "其他参数",IDC_STATIC,177,138,151,53
+    LTEXT           "极对数：",IDC_STATIC,192,150,33,8
+    EDITTEXT        IDC_EDIT18,247,146,29,14,ES_AUTOHSCROLL
+    LTEXT           "对极",IDC_STATIC,280,148,17,8
+    LTEXT           "额定电压：",IDC_STATIC,192,163,41,8
+    LTEXT           "其他：",IDC_STATIC,191,178,41,8
+    EDITTEXT        IDC_EDIT19,247,161,29,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,247,176,29,13,ES_AUTOHSCROLL
+    LTEXT           "V",IDC_STATIC,281,164,8,8
+END
+
+IDD_TAB2 DIALOGEX 0, 0, 383, 267
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "定制测试",IDC_STATIC,7,7,191,199
+    EDITTEXT        IDC_EDIT1,14,89,176,111,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_START,14,39,88,33,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_STOP,105,39,86,33,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "启动：",IDC_STATIC,12,25,47,11
+    LTEXT           "停机：",IDC_STATIC,103,25,47,12
+    LTEXT           "定制测试：",IDC_STATIC,13,78,40,11
+    GROUPBOX        "常规测试",IDC_STATIC,204,7,165,199
+    CONTROL         "限流",IDC_CHECK_CURRENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,52,32,10
+    CONTROL         "转速",IDC_CHECK_SPEED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,64,32,10
+    CONTROL         "欠压",IDC_CHECK_LOW_VOL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,76,32,10
+    CONTROL         "欠压恢复",IDC_CHECK_LOW_VOL_END,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,88,48,10
+    CONTROL         "转向",IDC_CHECK_DIR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,100,32,10
+    CONTROL         "软启时间",IDC_CHECK_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,112,48,10
+    CONTROL         "刹车",IDC_CHECK_BRAKE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,124,32,10
+    CONTROL         "NTC 高温截止",IDC_CHECK_NTC1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,136,64,10
+    CONTROL         "NTC 高温恢复",IDC_CHECK_NTC2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,148,64,10
+    CONTROL         "NTC 低温截止",IDC_CHECK_NTC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,160,64,10
+    CONTROL         "NTC 低温恢复",IDC_CHECK_NTC4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,231,172,64,10
+    CONTROL         "使用常规测试",IDC_CHECK_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,24,64,10
+    GROUPBOX        "常规项",IDC_STATIC,217,41,141,158
+    PUSHBUTTON      "全选",IDC_BUTTON1,271,185,27,10
+    LTEXT           "（最多255条指令）",IDC_STATIC,105,78,77,10
+    LTEXT           "0",IDC_STATIC,220,53,9,8
+    LTEXT           "1",IDC_STATIC,220,65,8,8
+    LTEXT           "2",IDC_STATIC,220,77,10,8
+    LTEXT           "3",IDC_STATIC,220,89,9,8
+    LTEXT           "4",IDC_STATIC,220,101,10,8
+    LTEXT           "5",IDC_STATIC,220,113,9,8
+    LTEXT           "6",IDC_STATIC,220,125,8,8
+    LTEXT           "7",IDC_STATIC,220,137,8,8
+    LTEXT           "8",IDC_STATIC,220,149,8,8
+    LTEXT           "9",IDC_STATIC,220,162,8,8
+    LTEXT           "10",IDC_STATIC,220,174,11,8
+END
+
+IDD_CODE DIALOGEX 0, 0, 257, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,52,68,50,14
+    PUSHBUTTON      "取消",IDCANCEL,110,68,50,14
+    LTEXT           "密  码：",IDC_STATIC,26,54,30,13
+    EDITTEXT        IDC_EDIT1,62,51,91,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "（6~10位密码）",IDC_STATIC,161,54,60,16
+    LTEXT           "用户名：",IDC_STATIC,24,35,33,13
+    EDITTEXT        IDC_USER,62,32,91,15,ES_AUTOHSCROLL
+    LTEXT           "加工厂：",IDC_STATIC,24,16,33,13
+    EDITTEXT        IDC_FACTROY_NAME,62,13,91,15,ES_AUTOHSCROLL
+    LTEXT           "（简称，如：杭州士腾）",IDC_STATIC,160,15,83,16
+END
+
+IDD_SET_CODE DIALOGEX 0, 0, 188, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "密码修改"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,51,72,50,14
+    PUSHBUTTON      "取消",IDCANCEL,110,72,50,14
+    LTEXT           "原密码：",IDC_STATIC,16,19,35,8
+    LTEXT           "新密码：",IDC_STATIC,16,35,30,8
+    EDITTEXT        IDC_EDIT1,66,16,89,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,66,32,89,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_IP_PORT DIALOGEX 0, 0, 188, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IP 端口 设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,72,50,14
+    PUSHBUTTON      "取消",IDCANCEL,96,72,50,14
+    LTEXT           "IP：",IDC_STATIC,24,22,24,8
+    LTEXT           "端口：",IDC_STATIC,21,37,27,8
+    EDITTEXT        IDC_EDIT8,53,34,99,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,53,18,100,15
+END
+
+IDD_DELIVER DIALOGEX 0, 0, 232, 56
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入进度"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,7,218,23
+END
+
+IDD_NG_RECORD DIALOGEX 0, 0, 428, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "测试统计"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_NG_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,97,414,206
+    LTEXT           "产品名：",IDC_STATIC,21,21,34,10
+    EDITTEXT        IDC_KEY,74,19,129,12,ES_AUTOHSCROLL
+    LTEXT           "起始日期：",IDC_STATIC,19,37,46,15
+    COMBOBOX        IDC_START_Y,74,35,41,50,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_START_M,124,35,34,200,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_START_D,166,35,37,500,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "截至日期：",IDC_STATIC,213,37,46,15
+    COMBOBOX        IDC_END_Y,268,35,41,50,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_END_M,318,35,34,200,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_END_D,360,35,37,500,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "搜索",IDC_SEARCH,194,56,47,14
+    LTEXT           "记录：",IDC_STATIC,7,86,26,10
+    GROUPBOX        "搜索",IDC_STATIC,14,7,398,69
+    LTEXT           "不良类型：",IDC_STATIC,214,20,42,10
+    EDITTEXT        IDC_NG,267,18,129,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "导出XLS",IDC_TO_XLS,347,56,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "MenuTest Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "MenuTest"
+            VALUE "LegalCopyright", "版权所有 (C) 2017"
+            VALUE "OriginalFilename", "MenuTest.EXE"
+            VALUE "ProductName", "MenuTest 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MENUTEST_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1079
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 596
+    END
+
+    IDD_DIALOG_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_TAB1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_TAB2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_CODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_SET_CODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_IP_PORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DELIVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_NG_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MENUTEST_FORM DLGINIT
+BEGIN
+    IDC_TYPE, 0x403, 9, 0
+0xb0d4, 0xd6c1, 0xa4b9, 0xdfbe, "\000" 
+    IDC_TYPE, 0x403, 9, 0
+0xe7b5, 0xafb6, 0xa4b9, 0xdfbe, "\000" 
+    IDC_TYPE, 0x403, 9, 0
+0xdfb8, 0xb9d1, 0xaecb, 0xc3b1, "\000" 
+    IDC_TYPE, 0x403, 9, 0
+0xe4b1, 0xb5c6, 0xf9b1, 0xe4cf, "\000" 
+    IDC_TYPE, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    0
+END
+
+IDD_DIALOG_NEW DLGINIT
+BEGIN
+    IDC_MFCBUTTON1, 0x37c, 369, 0
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x535f, 0x7974, 0x656c, 0x343e, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7453, 0x6c79, 0x3e65, 
+0x4d3c, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x415f, 0x7475, 0x736f, 0x7a69, 
+0x3e65, 0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 
+0x415f, 0x7475, 0x736f, 0x7a69, 0x3e65, 0x4d3c, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 
+0x543e, 0x5552, 0x3c45, 0x4d2f, 0x4346, 0x7542, 0x7474, 0x6e6f, 0x465f, 
+0x6c75, 0x546c, 0x7865, 0x5474, 0x6f6f, 0x3e6c, 0x4d3c, 0x4346, 0x7542, 
+0x7474, 0x6e6f, 0x435f, 0x7275, 0x6f73, 0x5472, 0x7079, 0x3e65, 0x3131, 
+0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x7543, 0x7372, 0x726f, 
+0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x5465, 0x7079, 0x3e65, 0x3c38, 0x4d2f, 0x4346, 0x7542, 0x7474, 
+0x6e6f, 0x495f, 0x616d, 0x6567, 0x7954, 0x6570, 0x3c3e, 0x464d, 0x4243, 
+0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x546e, 0x706f, 0x463e, 
+0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 
+0x6761, 0x4f65, 0x546e, 0x706f, 0x3c3e, 0x464d, 0x4243, 0x7475, 0x6f74, 
+0x5f6e, 0x6d49, 0x6761, 0x4f65, 0x526e, 0x6769, 0x7468, 0x463e, 0x4c41, 
+0x4553, 0x2f3c, 0x464d, 0x4243, 0x7475, 0x6f74, 0x5f6e, 0x6d49, 0x6761, 
+0x4f65, 0x526e, 0x6769, 0x7468, "\076" 
+    0
+END
+
+IDD_NG_RECORD DLGINIT
+BEGIN
+    IDC_START_Y, 0x403, 7, 0
+0x3032, 0x3731, 0xeac4, "\000" 
+    IDC_START_Y, 0x403, 7, 0
+0x3032, 0x3831, 0xeac4, "\000" 
+    IDC_START_Y, 0x403, 7, 0
+0x3032, 0x3931, 0xeac4, "\000" 
+    IDC_START_Y, 0x403, 7, 0
+0x3032, 0x3032, 0xeac4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3130, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3230, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3330, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3430, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3530, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3630, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3730, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3830, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3930, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3031, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3131, 0xc2d4, "\000" 
+    IDC_START_M, 0x403, 5, 0
+0x3231, 0xc2d4, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3130, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3230, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3330, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3430, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3530, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3630, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3730, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3830, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3930, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3031, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3131, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3231, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3331, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3431, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3531, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3631, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3731, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3831, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3931, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3032, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3132, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3232, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3332, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3432, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3532, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3632, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3732, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3832, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3932, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3033, 0xd5c8, "\000" 
+    IDC_START_D, 0x403, 5, 0
+0x3133, 0xd5c8, "\000" 
+    IDC_END_Y, 0x403, 7, 0
+0x3032, 0x3731, 0xeac4, "\000" 
+    IDC_END_Y, 0x403, 7, 0
+0x3032, 0x3831, 0xeac4, "\000" 
+    IDC_END_Y, 0x403, 7, 0
+0x3032, 0x3931, 0xeac4, "\000" 
+    IDC_END_Y, 0x403, 7, 0
+0x3032, 0x3032, 0xeac4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3130, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3230, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3330, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3430, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3530, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3630, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3730, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3830, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3930, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3031, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3131, 0xc2d4, "\000" 
+    IDC_END_M, 0x403, 5, 0
+0x3231, 0xc2d4, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3130, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3230, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3330, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3430, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3530, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3630, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3730, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3830, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3930, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3031, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3131, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3231, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3331, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3431, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3531, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3631, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3731, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3831, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3931, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3032, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3132, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3232, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3332, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3432, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3532, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3632, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3732, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3832, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3932, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3033, 0xd5c8, "\000" 
+    IDC_END_D, 0x403, 5, 0
+0x3133, 0xd5c8, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "MenuTest\n\nMenuTe\n\n\nMenuTest.Document\nMenuTe Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MenuTest"
+    AFX_IDS_IDLEMESSAGE     "正在连接服务器 ..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_NET_STATE  "当前测试数量：0             不良数量：0          "
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MenuTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
